@@ -1,3 +1,9 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+};
+
 export default function Home() {
-  return <h1>My WEB Site</h1>;
+  return <h2>Home Page</h2>;
 }
