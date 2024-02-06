@@ -5,5 +5,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <h2>Home Page</h2>;
+  return <h1 className="text-3xl font-bold mb-4">My Business Card</h1>;
 }

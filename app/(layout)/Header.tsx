@@ -13,23 +13,28 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <div className="header">
+    <header className="bg-gray-800 text-white p-4">
       <p>{"<MyWebSite />"}</p>
-      {navLinks.map((link) => {
-        const isActive =
-          (link.href === "/" && pathname === "/") ||
-          (link.href !== "/" && pathname.startsWith(link.href));
+      <nav>
+        <ul className="flex space-x-4">
+          {navLinks.map((link) => {
+            const isActive =
+              (link.href === "/" && pathname === "/") ||
+              (link.href !== "/" && pathname.startsWith(link.href));
 
-        return (
-          <Link
-            className={isActive ? "font-bold mr-4" : "text-blue-500 mr-4"}
-            key={link.name}
-            href={link.href}
-          >
-            {link.name}
-          </Link>
-        );
-      })}
-    </div>
+            return (
+              <li key={link.name}>
+                <Link
+                  className={isActive ? "font-bold mr-4" : "text-blue-400 mr-4"}
+                  href={link.href}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    </header>
   );
 }

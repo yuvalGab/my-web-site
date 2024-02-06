@@ -1,6 +1,10 @@
 export default function Footer() {
-    return <div className="footer">
-      <p>Yuval Gabian - web developer | Personal resume website about myself and my skills | Created with Next.js</p>
-    </div>;
-  }
-  
+  return (
+    <footer className="bg-gray-800 p-4">
+      <p className="text-sm text-white">
+        Yuval Gabian - web developer | Personal resume website about myself and
+        my skills | Created with Next.js
+      </p>
+    </footer>
+  );
+}

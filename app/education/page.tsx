@@ -5,5 +5,5 @@ export const metadata: Metadata = {
 };
 
 export default function Education() {
-  return <h2>Education Page</h2>;
+  return <h1 className="text-3xl font-bold mb-4">My Education</h1>;
 }

@@ -5,5 +5,5 @@ export const metadata: Metadata = {
 };
 
 export default function Experience() {
-  return <h2>Professional Experience Page</h2>;
+  return <h1 className="text-3xl font-bold mb-4">My Experience</h1>;
 }

@@ -22,14 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="app-container">
-          <header>
-            <Header />
-          </header>
-          <main>{children}</main>
-          <footer>
-            <Footer />
-          </footer>
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-grow p-4">{children}</main>
+          <Footer />
         </div>
       </body>
     </html>
