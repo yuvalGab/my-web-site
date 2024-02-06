@@ -14,9 +14,8 @@ export default function Header() {
 
   return (
     <div className="header">
-      <p>My WEB Site</p>
+      <p>{"<MyWebSite />"}</p>
       {navLinks.map((link) => {
-        console.log(pathname);
         const isActive =
           (link.href === "/" && pathname === "/") ||
           (link.href !== "/" && pathname.startsWith(link.href));
