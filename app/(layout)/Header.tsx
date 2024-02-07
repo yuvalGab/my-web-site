@@ -13,28 +13,30 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="bg-gray-800 text-white p-4">
-      <p>{"<MyWebSite />"}</p>
-      <nav>
-        <ul className="flex space-x-4">
-          {navLinks.map((link) => {
-            const isActive =
-              (link.href === "/" && pathname === "/") ||
-              (link.href !== "/" && pathname.startsWith(link.href));
+    <header className="bg-stone-900 text-stone-100 p-4">
+      <div className="flex items-center justify-between mx-auto max-w-screen-xl">
+        <p className="text-2xl">{"<MyWebSite />"}</p>
+        <nav>
+          <ul className="flex space-x-4">
+            {navLinks.map((link) => {
+              const isActive =
+                (link.href === "/" && pathname === "/") ||
+                (link.href !== "/" && pathname.startsWith(link.href));
 
-            return (
-              <li key={link.name}>
-                <Link
-                  className={isActive ? "font-bold mr-4" : "text-blue-400 mr-4"}
-                  href={link.href}
-                >
-                  {link.name}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
+              return (
+                <li key={link.name}>
+                  <Link
+                    className={isActive ? "mr-4" : "text-stone-300 mr-4"}
+                    href={link.href}
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 }
