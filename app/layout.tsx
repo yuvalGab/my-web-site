@@ -22,10 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
-          <main className="bg-stone-200 text-stone-950 flex-grow p-4">
-            <div className="mx-auto max-w-screen-xl">{children}</div>
+          <main className="flex-grow overflow-auto bg-stone-200 text-stone-950 h-[calc(100vh-160px)]">
+            <div className="mx-auto max-w-screen-xl p-4">{children}</div>
           </main>
           <Footer />
         </div>

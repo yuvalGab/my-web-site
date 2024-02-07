@@ -13,8 +13,8 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="bg-stone-900 text-stone-100 p-4">
-      <div className="flex items-center justify-between mx-auto max-w-screen-xl">
+    <header className="bg-stone-900 text-stone-100">
+      <div className="flex items-center justify-between mx-auto max-w-screen-xl p-4">
         <p className="text-2xl">{"<MyWebSite />"}</p>
         <nav>
           <ul className="flex space-x-4">
