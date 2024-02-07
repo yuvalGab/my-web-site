@@ -14,10 +14,10 @@ export default function Header() {
 
   return (
     <header className="bg-stone-900 text-stone-100">
-      <div className="flex items-center justify-between mx-auto max-w-screen-xl p-4">
-        <p className="text-2xl">{"<MyWebSite />"}</p>
+      <div className="flex flex-col md:flex-row items-center justify-between mx-auto max-w-screen-xl p-4">
+        <p className="text-xl">{"<MyWebSite />"}</p>
         <nav>
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-2">
             {navLinks.map((link) => {
               const isActive =
                 (link.href === "/" && pathname === "/") ||
@@ -26,7 +26,7 @@ export default function Header() {
               return (
                 <li key={link.name}>
                   <Link
-                    className={isActive ? "mr-4" : "text-stone-300 mr-4"}
+                    className={`mr-4${isActive ? '' : ' text-stone-300'}`}
                     href={link.href}
                   >
                     {link.name}
