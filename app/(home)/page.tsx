@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import AboutMe from "./AboutMe";
+import ContactMe from "./ContactMe";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -10,6 +11,7 @@ export default function Home() {
     <div className="home-page">
       <h1 className="text-xl font-bold mb-4 text-center underline">My Business Card</h1>
       <AboutMe />
+      <ContactMe />
     </div>
   );
 }
