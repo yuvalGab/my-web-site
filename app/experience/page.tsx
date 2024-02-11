@@ -1,6 +1,9 @@
 import { Metadata } from "next";
 import Carousel, { CarouselItem } from "../(common)/Carousel";
-import supplantLogo from '../../public/images/supplant-logo.png'
+import supplantLogo from "../../public/images/supplant-logo.jpg";
+import korentecLogo from "../../public/images/korentec-logo.png";
+import welldoneSoftwareLogo from "../../public/images/welldone-software-logo.jpg";
+import dgbLogo from "../../public/images/dgb-logo.png";
 
 export const metadata: Metadata = {
   title: "Experience",
@@ -19,19 +22,31 @@ const EXPERIENCE_ITEMS: CarouselItem[] = [
     image: supplantLogo,
   },
   {
-    title: "Card 2",
-    description: "Description 2",
-    // image: "/images/image2.jpg",
+    title: "2018 - 2021: Korentec Technologies - Full Stack Developer",
+    description: `Development of web systems for security and civilian companies.
+    Working with companies like Refael, IAI, 888 Holdings, etc.
+    Integration in external development teams in Israel and abroad.
+    Perform tasks on both server side and client side according to the precise design of the apps.
+    Responsibility for Front End innovation processes in the development department.
+    Mentoring and guidance for junior developers in the company.
+    For the last year I have joined an international development team of a large company.
+    We developed standalone widgets with them, for their world wide web products.
+    My role was primarily to lead the technical React FE development of the new apps.`,
+    image: korentecLogo,
   },
   {
-    title: "Card 3",
-    description: "Description 3",
-    // image: "/images/image3.jpg",
+    title: "2017 - 2018: Welldone Software - Full Stack Developer (remote job)",
+    description: `Development, maintenance and debugging of customer apps.
+    Writing code with emphasis on correct writing, quality checking and testing.
+    `,
+    image: welldoneSoftwareLogo,
   },
   {
-    title: "Card 4",
-    description: "Description 4",
-    // image: "/images/image4.jpg",
+    title: "2017: DGB - Full Stack Developer (temporary position)",
+    description: `Development for a startup product, an app for preventing sexual harassment at work.
+    Creating components by using the right lifecycle and global state management.
+    Interacting with the server side as needed by writing apis functions.`,
+    image: dgbLogo,
   },
 ];
 
