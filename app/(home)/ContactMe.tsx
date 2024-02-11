@@ -20,7 +20,7 @@ export default function ContactMe() {
           rel="noopener noreferrer"
         >
           <Image
-            className="w-14 h-14 cursor-pointer"
+            className="w-12 h-12 cursor-pointer"
             src={waLogo}
             alt="WhatsApp"
           />
@@ -31,7 +31,7 @@ export default function ContactMe() {
           rel="noopener noreferrer"
         >
           <Image
-            className="w-14 h-14 cursor-pointer"
+            className="w-12 h-12 cursor-pointer"
             src={emailLogo}
             alt="Email"
           />
@@ -42,7 +42,7 @@ export default function ContactMe() {
           rel="noopener noreferrer"
         >
           <Image
-            className="w-14 h-14 cursor-pointer"
+            className="w-12 h-12 cursor-pointer"
             src={linkedinLogo}
             alt="LinkedIn"
           />
@@ -53,7 +53,7 @@ export default function ContactMe() {
           rel="noopener noreferrer"
         >
           <Image
-            className="w-14 h-14 cursor-pointer"
+            className="w-12 h-12 cursor-pointer"
             src={githubLogo}
             alt="GitHub"
           />

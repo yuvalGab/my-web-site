@@ -5,5 +5,5 @@ export const metadata: Metadata = {
 };
 
 export default function Skills() {
-  return <h1 className="text-3xl font-bold mb-4">My Skills</h1>;
+  return <h1 className="text-xl font-bold mb-4 text-center underline">My Skills</h1>;
 }

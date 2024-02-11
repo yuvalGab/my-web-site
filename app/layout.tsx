@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
-          <main className="flex-grow overflow-auto bg-stone-200 text-stone-950 h-[calc(100vh-160px)]">
+          <main className="flex-grow overflow-auto bg-gradient-to-r from-stone-100 via-stone-200 to-stone-300 text-stone-950 h-[calc(100vh-160px)]">
             <div className="mx-auto max-w-screen-xl p-4">{children}</div>
           </main>
           <Footer />
