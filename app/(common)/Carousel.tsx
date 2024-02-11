@@ -39,22 +39,22 @@ export default function Carousel({ data }: CarouselProps) {
         ))}
       </div>
       <div className="relative">
-        <div className="flex justify-between items-center absolute w-full h-full text-4xl">
+        <div className="flex justify-between items-center absolute w-full h-full text-4xl font-bold">
           <button
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 p-4"
+            className="fixed md:absolute left-0 top-1/2 transform -translate-y-1/2 p-4"
             onClick={prevCard}
           >
             &lt;
           </button>
           <button
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 p-4"
+            className="fixed md:absolute right-0 top-1/2 transform -translate-y-1/2 p-4"
             onClick={nextCard}
           >
             &gt;
           </button>
         </div>
         <div className="flex justify-center items-center">
-          <div className="bg-white p-8 rounded-md shadow-sm w-11/12 md:w-10/12">
+          <div className="bg-white p-8 rounded-md shadow-sm w-11/12 md:w-10/12 min-h-[460px]">
             <h2 className="text-xl font-bold mb-4">
               {data[currentIndex].title}
             </h2>
