@@ -12,7 +12,7 @@ interface GridProps {
 export default function Grid({ items }: GridProps) {
   return (
     <div className="grid container mx-auto p-8">
-      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-4">
         {items.map((item: GridItem) => (
           <div
             className="grid-item sm:opacity-85 sm:hover:opacity-100"
