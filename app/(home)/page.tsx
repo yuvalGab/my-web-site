@@ -1,3 +1,17 @@
+import { Metadata } from "next";
+import AboutMe from "./AboutMe";
+import ContactMe from "./ContactMe";
+
+export const metadata: Metadata = {
+  title: "Home",
+};
+
 export default function Home() {
-  return <h1>My WEB Site</h1>;
+  return (
+    <div className="home-page">
+      <h1 className="text-xl font-bold mb-4 text-center underline">My Business Card</h1>
+      <AboutMe />
+      <ContactMe />
+    </div>
+  );
 }
