@@ -11,7 +11,7 @@ const MY_GITHUB_PROFILE = "yuvalGab";
 
 export default function ContactMe() {
   return (
-    <div className="mx-auto p-8 bg-white rounded-md shadow-sm m-10">
+    <div className="mx-auto p-8 bg-white rounded-md shadow-sm mt-8">
       <h2 className="text-2xl mb-4">Contact Me</h2>
       <div className="flex justify-center items-center space-x-4 md:space-x-16 mb-8">
         <a

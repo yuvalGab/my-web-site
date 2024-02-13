@@ -54,7 +54,7 @@ export default function Education() {
           </div>
           <div className="xl:w-1/2">
             <Image
-              className="w-72 h-72 md:w-80 md:h-80 xl:w-[400px] xl:h-[400px] object-cover mx-auto"
+              className="w-72 h-72 md:w-80 md:h-80 xl:w-[25rem] xl:h-[25rem] object-cover mx-auto"
               src={webTools}
               alt="web tools"
             />
