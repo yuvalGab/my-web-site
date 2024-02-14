@@ -54,7 +54,7 @@ export default function Carousel({ data }: CarouselProps) {
           </button>
         </div>
         <div className="flex justify-center items-center">
-          <div className="bg-white p-8 rounded-md shadow-sm w-11/12 md:w-10/12 min-h-[1000px] sm:min-h-[700px] lg:min-h-[500px]">
+          <div className="bg-white p-8 rounded-md shadow-sm w-11/12 md:w-10/12 min-h-[62rem] sm:min-h-[44rem] lg:min-h-[31rem]">
             <h2 className="text-xl font-bold mb-4">
               {data[currentIndex].title}
             </h2>
@@ -62,9 +62,10 @@ export default function Carousel({ data }: CarouselProps) {
               <p className="md:mr-16 whitespace-pre-line">{data[currentIndex].description}</p>
               {data[currentIndex].image && (
                 <Image
-                  className="w-40 h-40 md:w-60 md:h-60 mt-12 md:mt-0"
+                  className="w-36 h-36 md:w-60 md:h-60 mt-12 md:mt-0"
                   src={data[currentIndex].image as StaticImageData}
                   alt={`Card ${currentIndex + 1}`}
+                  quality={50}
                 />
               )}
             </div>
