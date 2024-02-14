@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import laptopTable from "../../public/images/laptop-table.jpg";
 import webTools from "../../public/images/web-tools.jpg";
 
 export const metadata: Metadata = {
@@ -12,6 +13,12 @@ export default function Education() {
       <h1 className="text-xl font-bold mb-4 text-center underline">
         My Education
       </h1>
+      <Image
+        className="h-80 md:h-[28.5rem] object-cover rounded-md shadow-sm mx-auto mb-6"
+        src={laptopTable}
+        alt="laptop table"
+        quality={50}
+      ></Image>
       <div className="mx-auto p-8 bg-white rounded-md shadow-sm">
         <div className="flex flex-col xl:flex-row xl:items-center">
           <div className="font-lg xl:w-1/2 xl:mr-12">
@@ -57,6 +64,8 @@ export default function Education() {
               className="w-64 h-64 md:w-72 md:h-72 xl:w-80 xl:h-80 object-cover mx-auto"
               src={webTools}
               alt="web tools"
+              quality={50}
+              priority
             />
           </div>
         </div>
