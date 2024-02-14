@@ -23,6 +23,7 @@ export default function ContactMe() {
             className="w-12 h-12 cursor-pointer"
             src={waLogo}
             alt="WhatsApp"
+            quality={50}
           />
         </a>
         <a
@@ -34,6 +35,7 @@ export default function ContactMe() {
             className="w-12 h-12 cursor-pointer"
             src={emailLogo}
             alt="Email"
+            quality={50}
           />
         </a>
         <a
@@ -45,6 +47,7 @@ export default function ContactMe() {
             className="w-12 h-12 cursor-pointer"
             src={linkedinLogo}
             alt="LinkedIn"
+            quality={50}
           />
         </a>
         <a
@@ -56,6 +59,7 @@ export default function ContactMe() {
             className="w-12 h-12 cursor-pointer"
             src={githubLogo}
             alt="GitHub"
+            quality={50}
           />
         </a>
       </div>

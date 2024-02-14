@@ -1,9 +1,11 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Carousel, { CarouselItem } from "../(common)/Carousel";
 import supplantLogo from "../../public/images/supplant-logo.jpg";
 import korentecLogo from "../../public/images/korentec-logo.png";
 import welldoneSoftwareLogo from "../../public/images/welldone-software-logo.jpg";
 import dgbLogo from "../../public/images/dgb-logo.png";
+import openSpace from "../../public/images/open-space.jpg"
 
 export const metadata: Metadata = {
   title: "Experience",
@@ -57,6 +59,13 @@ export default function Experience() {
         My Experience
       </h1>
       <Carousel data={EXPERIENCE_ITEMS} />
+      <Image
+        className="h-80 md:h-[28.5rem] object-cover rounded-md shadow-sm w-11/12 md:w-10/12 mx-auto mt-6"
+        src={openSpace}
+        alt="open space"
+        quality={50}
+        priority
+      ></Image>
     </div>
   );
 }
