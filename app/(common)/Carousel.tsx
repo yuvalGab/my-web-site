@@ -62,9 +62,10 @@ export default function Carousel({ data }: CarouselProps) {
               <p className="md:mr-16 whitespace-pre-line">{data[currentIndex].description}</p>
               {data[currentIndex].image && (
                 <Image
-                  className="w-40 h-40 md:w-60 md:h-60 mt-12 md:mt-0"
+                  className="w-36 h-36 md:w-60 md:h-60 mt-12 md:mt-0"
                   src={data[currentIndex].image as StaticImageData}
                   alt={`Card ${currentIndex + 1}`}
+                  quality={50}
                 />
               )}
             </div>
