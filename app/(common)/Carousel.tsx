@@ -1,6 +1,7 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
+import { scrollToTop } from "@/utils/domManipulation";
 
 export interface CarouselItem {
   title: string;
@@ -17,10 +18,12 @@ export default function Carousel({ data }: CarouselProps) {
 
   const nextCard = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+    scrollToTop();
   };
 
   const prevCard = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
+    scrollToTop();
   };
 
   return (
@@ -59,7 +62,9 @@ export default function Carousel({ data }: CarouselProps) {
               {data[currentIndex].title}
             </h2>
             <div className="flex flex-col md:flex-row justify-between items-center mb-4">
-              <p className="md:mr-16 whitespace-pre-line">{data[currentIndex].description}</p>
+              <p className="md:mr-16 whitespace-pre-line">
+                {data[currentIndex].description}
+              </p>
               {data[currentIndex].image && (
                 <Image
                   className="w-36 h-36 md:w-60 md:h-60 mt-12 md:mt-0"

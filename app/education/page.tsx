@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import laptopTable from "../../public/images/laptop-table.jpg";
-import webTools from "../../public/images/web-tools.jpg";
+import laptopTable from "@/public/images/laptop-table.jpg";
+import webTools from "@/public/images/web-tools.jpg";
 
 export const metadata: Metadata = {
   title: "Education",
