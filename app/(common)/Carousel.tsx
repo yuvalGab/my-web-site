@@ -44,30 +44,30 @@ export default function Carousel({ data }: CarouselProps) {
       <div className="relative">
         <div className="flex justify-between items-center absolute w-full h-full text-4xl font-bold">
           <button
-            className="fixed md:absolute left-0 top-1/2 transform -translate-y-1/2 p-4"
+            className="fixed lg:absolute left-0 top-1/2 transform -translate-y-1/2 p-4"
             onClick={prevCard}
           >
             &lt;
           </button>
           <button
-            className="fixed md:absolute right-0 top-1/2 transform -translate-y-1/2 p-4"
+            className="fixed lg:absolute right-0 top-1/2 transform -translate-y-1/2 p-4"
             onClick={nextCard}
           >
             &gt;
           </button>
         </div>
         <div className="flex justify-center items-center">
-          <div className="bg-white p-8 rounded-md shadow-sm w-11/12 md:w-10/12 min-h-[62rem] sm:min-h-[44rem] lg:min-h-[31rem]">
+          <div className="bg-white p-8 rounded-md shadow-sm w-11/12 md:w-10/12 lg:min-h-[31rem]">
             <h2 className="text-xl font-bold mb-4">
               {data[currentIndex].title}
             </h2>
-            <div className="flex flex-col md:flex-row justify-between items-center mb-4">
+            <div className="flex flex-col lg:flex-row justify-between items-center mb-4">
               <p className="md:mr-16 whitespace-pre-line">
                 {data[currentIndex].description}
               </p>
               {data[currentIndex].image && (
                 <Image
-                  className="w-36 h-36 md:w-60 md:h-60 mt-12 md:mt-0"
+                  className="w-36 h-36 md:w-60 md:h-60 mt-12 xl:mt-0"
                   src={data[currentIndex].image as StaticImageData}
                   alt={`Card ${currentIndex + 1}`}
                   quality={50}
