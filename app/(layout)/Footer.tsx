@@ -1,4 +1,4 @@
-import { version } from "@/package.json";
+import packageInfo from "@/package.json";
 
 export default function Footer() {
   return (
@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto max-w-screen-xl p-4">
         <p className="text-xs text-stone-100">
           Yuval Gabian - web developer | Personal resume website about myself
-          and my skills | Created with Next.js | Version {version}
+          and my skills | Created with Next.js | Version {packageInfo.version}
         </p>
       </div>
     </footer>
