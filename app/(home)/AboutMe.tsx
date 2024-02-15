@@ -18,7 +18,7 @@ export default function AboutMe() {
           </p>
           <p>I live in Ramat Yishai, Israel.</p>
         </div>
-        <div className="md:w-1/2 mt-10 md:mt-0">
+        <div className="md:w-1/2 mt-6 md:mt-0">
           <Image
             className="w-52 h-52 rounded-full object-cover mx-auto"
             src={profilePic}

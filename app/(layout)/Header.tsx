@@ -26,7 +26,7 @@ export default function Header() {
               return (
                 <li key={link.name}>
                   <Link
-                    className={`mr-4${isActive ? "" : " text-stone-300"}`}
+                    className={`mr-4${isActive ? "" : " text-stone-400"}`}
                     href={link.href}
                   >
                     {link.name}
