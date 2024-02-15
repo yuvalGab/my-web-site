@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState, useEffect, useCallback } from "react";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -11,12 +12,28 @@ const navLinks = [
 
 export default function Header() {
   const pathname = usePathname();
+  const [shouldShowLogo, setShouldShowLogo] = useState(true);
+
+  // TBD: use better type then any here
+  const onWindowScroll = useCallback((event: any) => {
+    const { offsetWidth, scrollTop } = event.target.scrollingElement;
+    setShouldShowLogo(offsetWidth > 768 || scrollTop < 100);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", onWindowScroll);
+    return () => {
+      window.removeEventListener("scroll", onWindowScroll);
+    };
+  }, [onWindowScroll]);
 
   return (
     <header className="fixed top-0 z-10 w-full bg-stone-900 text-stone-100">
       <div className="flex flex-col md:flex-row items-center justify-between mx-auto max-w-screen-xl p-4">
-        <p className="text-xl">{"<MyWebSite />"}</p>
-        <nav className="mt-2 md:mt-0">
+        {shouldShowLogo && (
+          <p className="text-xl mb-2 md:mb-0">{"<MyWebSite />"}</p>
+        )}
+        <nav>
           <ul className="flex space-x-2">
             {navLinks.map((link) => {
               const isActive =
