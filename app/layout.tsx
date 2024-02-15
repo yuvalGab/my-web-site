@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex flex-col pt-[5.5rem] md:pt-[3.5rem]">
+        <div className="flex flex-col min-h-screen pt-[5.5rem] md:pt-[3.5rem]">
           <Header />
           <main className="flex-grow bg-gradient-to-r from-stone-100 via-stone-200 to-stone-300 text-stone-950 pb-8">
             <div className="mx-auto max-w-screen-xl p-4">{children}</div>
