@@ -1,7 +1,9 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect, useCallback } from "react";
+import myWebSiteLogo from "@/public/images/my-web-site-logo.png";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -31,7 +33,12 @@ export default function Header() {
     <header className="fixed top-0 z-10 w-full bg-stone-900 text-stone-100">
       <div className="flex flex-col md:flex-row items-center justify-between mx-auto max-w-screen-xl p-4">
         {shouldShowLogo && (
-          <p className="text-xl mb-2 md:mb-0">{"<MyWebSite />"}</p>
+          <Image
+            className="mb-1 md:mb-0"
+            src={myWebSiteLogo}
+            alt="my web site logo"
+            priority
+          />
         )}
         <nav>
           <ul className="flex space-x-2">
