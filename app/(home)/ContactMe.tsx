@@ -1,8 +1,8 @@
 import Image from "next/image";
-import waLogo from "../../public/images/wa-logo.png";
-import emailLogo from "../../public/images/email-logo.png";
-import linkedinLogo from "../../public/images/linkedIn-logo.png";
-import githubLogo from "../../public/images/github-logo.png";
+import waLogo from "@/public/images/wa-logo.png";
+import emailLogo from "@/public/images/email-logo.png";
+import linkedinLogo from "@/public/images/linkedIn-logo.png";
+import githubLogo from "@/public/images/github-logo.png";
 
 const MY_PHONE_NUMBER = "+972547390829";
 const MY_EMAIL_ADDRESS = "yuvalgab2007@gmail.com";

@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Carousel, { CarouselItem } from "../(common)/Carousel";
-import supplantLogo from "../../public/images/supplant-logo.jpg";
-import korentecLogo from "../../public/images/korentec-logo.png";
-import welldoneSoftwareLogo from "../../public/images/welldone-software-logo.jpg";
-import dgbLogo from "../../public/images/dgb-logo.png";
-import openSpace from "../../public/images/open-space.jpg"
+import supplantLogo from "@/public/images/supplant-logo.jpg";
+import korentecLogo from "@/public/images/korentec-logo.png";
+import welldoneSoftwareLogo from "@/public/images/welldone-software-logo.jpg";
+import dgbLogo from "@/public/images/dgb-logo.png";
+import openSpace from "@/public/images/open-space.jpg"
 
 export const metadata: Metadata = {
   title: "Experience",

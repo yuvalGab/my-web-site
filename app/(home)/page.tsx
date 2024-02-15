@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import AboutMe from "./AboutMe";
 import ContactMe from "./ContactMe";
-import laptopDark from "../../public/images/laptop-dark.jpg";
+import laptopDark from "@/public/images/laptop-dark.jpg";
 
 export const metadata: Metadata = {
   title: "Home",
