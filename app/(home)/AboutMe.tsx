@@ -9,12 +9,12 @@ export default function AboutMe() {
       <div className="flex flex-col md:flex-row items-center">
         <div className="font-lg md:w-1/2">
           <p className="mb-4">
-            <b>Full Stack Javascript Team Leader</b> with 7 years experience (2
+            <b>Full Stack JavaScript Developer</b> with 7 years experience (2
             years as team leader).
           </p>
           <p className="mb-4">
-            A hands-on team leader with good self-learning ability and great
-            motivation to learn and develop.
+            A web developer with good self-learning ability and great motivation
+            to learn and develop.
           </p>
           <p>I live in Ramat Yishai, Israel.</p>
         </div>
