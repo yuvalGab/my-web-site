@@ -1,5 +1,5 @@
-import Image from "next/image";
-import profilePic from "@/public/images/profile-pic.png";
+import Image from 'next/image'
+import profilePic from '@/public/images/profile-pic.png'
 
 export default function AboutMe() {
   return (
@@ -9,12 +9,12 @@ export default function AboutMe() {
       <div className="flex flex-col md:flex-row items-center">
         <div className="font-lg md:w-1/2">
           <p className="mb-4">
-            <b>Full Stack JavaScript Developer</b> with 7 years experience (2
-            years as team leader).
+            <b>Full Stack JavaScript Developer</b> with 7 years of experience,
+            including 2 years in a leadership role.
           </p>
           <p className="mb-4">
-            A web developer with good self-learning ability and great motivation
-            to learn and develop.
+            A dedicated web developer with a strong aptitude for self-learning
+            and a keen motivation to continuously enhance skills and expertise.
           </p>
           <p>I live in Ramat Yishai, Israel.</p>
         </div>
@@ -28,5 +28,5 @@ export default function AboutMe() {
         </div>
       </div>
     </div>
-  );
+  )
 }

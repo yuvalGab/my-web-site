@@ -1,56 +1,47 @@
-import { Metadata } from "next";
-import Image from "next/image";
-import Carousel, { CarouselItem } from "../(common)/Carousel";
-import supplantLogo from "@/public/images/supplant-logo.jpg";
-import korentecLogo from "@/public/images/korentec-logo.png";
-import welldoneSoftwareLogo from "@/public/images/welldone-software-logo.jpg";
-import dgbLogo from "@/public/images/dgb-logo.png";
-import openSpace from "@/public/images/open-space.jpg"
+import { Metadata } from 'next'
+import Image from 'next/image'
+import Carousel, { CarouselItem } from '../(common)/Carousel'
+import supplantLogo from '@/public/images/supplant-logo.jpg'
+import korentecLogo from '@/public/images/korentec-logo.png'
+import welldoneSoftwareLogo from '@/public/images/welldone-software-logo.jpg'
+import dgbLogo from '@/public/images/dgb-logo.png'
+import openSpace from '@/public/images/open-space.jpg'
 
 export const metadata: Metadata = {
-  title: "Experience",
-};
+  title: 'Experience',
+}
 
 const EXPERIENCE_ITEMS: CarouselItem[] = [
   {
-    title: "2021 - 2024: SupPlant - Full Stack Team Leader",
-    description: `I started as a Full Stack Developer and after a year I became the team leader.
-    Leading a development team while performing task planning, code review, deployments and front end tech lead.
-    Works on from scratch and writes quality code from end to end, while adapting to rapid changes in the company.
-    For example, I led a rapid development of a new product from end to end, using Node.js, MongoDB and React.
-    Making sure to stay up to date with new technologies and best practices, while examining cost versus benefit.
-    Synchronizing the work with the other teams, the product and the other professional elements in the organization.
-    Individual and group management of international team members, while maintaining balanced work and taking care of their personal and professional needs.`,
+    title: '2021 - 2024: SupPlant - Full Stack Team Leader',
+    description: `Initially employed as a Full Stack Developer, advanced to the role of team leader within a year.
+    Led a development team, overseeing task planning, code reviews, deployments, and serving as the front-end tech lead.
+    Executed projects from inception to completion, utilizing technologies such as Node.js, MongoDB, and React.
+    Adaptable to fast-paced changes within the company, while maintaining a focus on writing high-quality code.
+    Kept abreast of emerging technologies and best practices, ensuring alignment with organizational goals.
+    Coordinated efforts with cross-functional teams and stakeholders, both locally and internationally, fostering a collaborative work environment.`,
     image: supplantLogo,
   },
   {
-    title: "2018 - 2021: Korentec Technologies - Full Stack Developer",
-    description: `Development of web systems for security and civilian companies.
-    Working with companies like Refael, IAI, 888 Holdings, etc.
-    Integration in external development teams in Israel and abroad.
-    Perform tasks on both server side and client side according to the precise design of the apps.
-    Responsibility for Front End innovation processes in the development department.
-    Mentoring and guidance for junior developers in the company.
-    For the last year I have joined an international development team of a large company.
-    We developed standalone widgets with them, for their world wide web products.
-    My role was primarily to lead the technical React FE development of the new apps.`,
+    title: '2018 - 2021: Korentec Technologies - Full Stack Developer',
+    description: `Contributed to the development of web systems for security and civilian companies, including notable clients such as Refael, IAI, and 888 Holdings.
+    Collaborated with internal and external development teams, both domestic and international, to deliver projects adhering to strict specifications.
+    Took charge of front-end innovation processes within the development department and provided mentorship to junior developers.
+    Joined an international development team in the final year, specializing in React front-end development for new applications.`,
     image: korentecLogo,
   },
   {
-    title: "2017 - 2018: Welldone Software - Full Stack Developer (remote job)",
-    description: `Development, maintenance and debugging of customer apps.
-    Writing code with emphasis on correct writing, quality checking and testing.
-    `,
+    title: '2017 - 2018: Welldone Software - Full Stack Developer (remote job)',
+    description: `Engaged in the development, maintenance, and debugging of customer applications, emphasizing code quality, testing, and adherence to best practices.`,
     image: welldoneSoftwareLogo,
   },
   {
-    title: "2017: DGB - Full Stack Developer (temporary position)",
-    description: `Development for a startup product, an app for preventing sexual harassment at work.
-    Creating components by using the right lifecycle and global state management.
-    Interacting with the server side as needed by writing apis functions.`,
+    title: '2017: DGB - Full Stack Developer (temporary position)',
+    description: `Contributed to the development of a startup product aimed at preventing sexual harassment in the workplace.
+    Developed components with a focus on efficient lifecycle management and global state handling, while also interfacing with server-side APIs as necessary.`,
     image: dgbLogo,
   },
-];
+]
 
 export default function Experience() {
   return (
@@ -67,5 +58,5 @@ export default function Experience() {
         priority
       ></Image>
     </div>
-  );
+  )
 }
