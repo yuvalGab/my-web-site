@@ -1,11 +1,11 @@
-import { Metadata } from "next";
-import Image from "next/image";
-import laptopTable from "@/public/images/laptop-table.jpg";
-import webTools from "@/public/images/web-tools.jpg";
+import { Metadata } from 'next'
+import Image from 'next/image'
+import laptopTable from '@/public/images/laptop-table.jpg'
+import webTools from '@/public/images/web-tools.jpg'
 
 export const metadata: Metadata = {
-  title: "Education",
-};
+  title: 'Education',
+}
 
 export default function Education() {
   return (
@@ -23,26 +23,20 @@ export default function Education() {
         <div className="flex flex-col xl:flex-row xl:items-center">
           <div className="font-lg xl:w-1/2 xl:mr-12">
             <p className="mb-4">
-              I started my way in web development by <b>self-study</b>.
+              My journey into web development began with <b>self-study</b>. Despite
+              managing other responsibilities, I dedicated myself to coding
+              daily, immersing myself in manuals, articles, and official
+              documentation.
             </p>
             <p className="mb-4">
-              I sat and learned to code every day even though I was working
-              other jobs.
+              After several months of persistent learning, I secured my first
+              job, marking the beginning of an enriching chapter in my career.
             </p>
             <p className="mb-4">
-              I learned through manuals, articles, and official documentation.
-            </p>
-            <p className="mb-4">
-              After a few months I found my first job and from there everything
-              is history.
-            </p>
-            <p className="mb-4">
-              I deepened my knowledge and over time I became a professional
-              developer in his field.
-            </p>
-            <p className="mb-4">
-              While working, I took a course in the field to sort out what I
-              learned on my own:
+              As I delved deeper into the field, my knowledge flourished, and I
+              evolved into a proficient developer within my domain.
+              Complementing my practical experience, I furthered my education by
+              enrolling in a specialized course:
             </p>
             <p className="mb-4">
               <b>
@@ -50,13 +44,14 @@ export default function Education() {
               </b>
             </p>
             <p className="mb-4">
-              Course for Full Stack Development - HTML, CSS, JavaScript,
-              TypeScript, Angular, Node.js, MongoDB, MySQL, Git ,Express.js,
-              jQuery
+              Completed a comprehensive Full Stack Development course covering
+              HTML, CSS, JavaScript, TypeScript, Angular, Node.js, MongoDB,
+              MySQL, Git, and Express.js, among other technologies.
             </p>
             <p className="mb-4">
-              Attached here is a picture showing the main technologies that I
-              learned on my own, in the course and while working.
+              Attached is an illustration showcasing the primary technologies I
+              mastered through self-study, formal education, and practical
+              application.
             </p>
           </div>
           <div className="xl:w-1/2">
@@ -71,5 +66,5 @@ export default function Education() {
         </div>
       </div>
     </div>
-  );
+  )
 }

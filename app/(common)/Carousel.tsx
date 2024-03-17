@@ -57,7 +57,7 @@ export default function Carousel({ data }: CarouselProps) {
           </button>
         </div>
         <div className="flex justify-center items-center">
-          <div className="bg-white p-8 rounded-md shadow-sm w-11/12 md:w-10/12 lg:min-h-[31rem]">
+          <div className="bg-white p-8 rounded-md shadow-sm w-11/12 md:w-10/12 lg:min-h-[26rem]">
             <h2 className="text-xl font-bold mb-4">
               {data[currentIndex].title}
             </h2>
