@@ -15,7 +15,7 @@ const EXPERIENCE_ITEMS: CarouselItem[] = [
   {
     title: '2021 - 2024: SupPlant - Full Stack Team Leader',
     description: `Initially employed as a Full Stack Developer, advanced to the role of team leader within a year.
-    Led a development team, overseeing task planning, code reviews, deployments, and serving as the front-end tech lead.
+    Led a development team, recruiting developers, overseeing task planning, code reviews, deployments, and serving as the front-end tech lead.
     Executed projects from inception to completion, utilizing technologies such as Node.js, MongoDB, and React.
     Adaptable to fast-paced changes within the company, while maintaining a focus on writing high-quality code.
     Kept abreast of emerging technologies and best practices, ensuring alignment with organizational goals.

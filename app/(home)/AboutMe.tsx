@@ -13,8 +13,9 @@ export default function AboutMe() {
             including 2 years in a leadership role.
           </p>
           <p className="mb-4">
-            A dedicated web developer with a strong aptitude for self-learning
-            and a keen motivation to continuously enhance skills and expertise.
+            Capable of leading and directing the creation of quality code, while
+            actively learning and identifying appropriate tools to support the
+            development team and organizational objectives.
           </p>
           <p>I live in Ramat Yishai, Israel.</p>
         </div>
