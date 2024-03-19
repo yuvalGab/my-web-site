@@ -21,6 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:title" content="<MyWebSite />" />
+        <meta property="og:description" content="Personal resume website about myself and my skills" />
+        <meta property="og:image" content="/images/laptop-dark.jpg" />
+        <meta property="og:url" content="https://www.my-web-site.me" />
+        <meta property="og:type" content="website" />
+      </head>
       <body className={inter.className}>
         <div className="flex flex-col min-h-screen pt-[5rem] md:pt-[3.5rem] bg-gradient-to-r from-stone-100 via-stone-200 to-stone-300 text-stone-950">
           <Header />
