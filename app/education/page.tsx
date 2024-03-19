@@ -17,6 +17,7 @@ export default function Education() {
         className="h-80 md:h-[28.5rem] object-cover rounded-md shadow-sm mx-auto mb-6"
         src={laptopTable}
         alt="laptop table"
+        priority
       ></Image>
       <div className="mx-auto p-8 bg-white rounded-md shadow-sm">
         <div className="flex flex-col xl:flex-row xl:items-center">

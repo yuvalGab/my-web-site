@@ -24,6 +24,7 @@ export default function Grid({ items }: GridProps) {
                   className="mx-auto mb-2 object-scale-down w-24 h-24"
                   src={item.image}
                   alt={item.title}
+                  priority
                 />
               )}
               <p className="text-center font-bold truncate">{item.title}</p>
