@@ -1,12 +1,12 @@
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from 'next/image'
 
 export interface GridItem {
-  title: string;
-  image?: StaticImageData;
+  title: string
+  image?: StaticImageData
 }
 
 interface GridProps {
-  items: GridItem[];
+  items: GridItem[]
 }
 
 export default function Grid({ items }: GridProps) {
@@ -24,7 +24,6 @@ export default function Grid({ items }: GridProps) {
                   className="mx-auto mb-2 object-scale-down w-24 h-24"
                   src={item.image}
                   alt={item.title}
-                  quality={30}
                 />
               )}
               <p className="text-center font-bold truncate">{item.title}</p>
@@ -33,5 +32,5 @@ export default function Grid({ items }: GridProps) {
         ))}
       </div>
     </div>
-  );
+  )
 }

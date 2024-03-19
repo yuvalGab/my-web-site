@@ -17,7 +17,6 @@ export default function Education() {
         className="h-80 md:h-[28.5rem] object-cover rounded-md shadow-sm mx-auto mb-6"
         src={laptopTable}
         alt="laptop table"
-        quality={50}
       ></Image>
       <div className="mx-auto p-8 bg-white rounded-md shadow-sm">
         <div className="flex flex-col xl:flex-row xl:items-center">
@@ -59,7 +58,6 @@ export default function Education() {
               className="w-64 h-64 md:w-72 md:h-72 xl:w-80 xl:h-80 object-cover mx-auto"
               src={webTools}
               alt="web tools"
-              quality={50}
               priority
             />
           </div>

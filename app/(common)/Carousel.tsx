@@ -70,7 +70,6 @@ export default function Carousel({ data }: CarouselProps) {
                   className="w-36 h-36 md:w-60 md:h-60 mt-12 xl:mt-0"
                   src={data[currentIndex].image as StaticImageData}
                   alt={`Card ${currentIndex + 1}`}
-                  quality={50}
                 />
               )}
             </div>
