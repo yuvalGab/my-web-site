@@ -24,7 +24,6 @@ export default function AboutMe() {
             className="w-52 h-52 rounded-full object-cover mx-auto"
             src={profilePic}
             alt="profile picture"
-            quality={50}
           />
         </div>
       </div>

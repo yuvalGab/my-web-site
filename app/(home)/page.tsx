@@ -18,7 +18,6 @@ export default function Home() {
         className="h-80 md:h-[28.5rem] object-cover rounded-md shadow-sm mb-6"
         src={laptopDark}
         alt="laptop dark"
-        quality={50}
         priority
       ></Image>
       <AboutMe />

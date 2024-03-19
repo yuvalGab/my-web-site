@@ -54,7 +54,6 @@ export default function Experience() {
         className="h-80 md:h-[28.5rem] object-cover rounded-md shadow-sm w-11/12 md:w-10/12 mx-auto mt-6"
         src={openSpace}
         alt="open space"
-        quality={50}
         priority
       ></Image>
     </div>
